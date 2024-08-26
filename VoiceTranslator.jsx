@@ -6,7 +6,7 @@ import { t } from 'react-native-tailwindcss';
 
 
 export default function VoiceTranslator({ navigation }) {
-console.log('Navigation Prop:', navigation);  /// error prone part
+console.log('Navigation Prop:', navigation);  
   const [selectedLanguage1, setSelectedLanguage1] = useState("English");
   const [selectedLanguage2, setSelectedLanguage2] = useState("French");
   const [inputText, setInputText] = useState("I am listening...");
