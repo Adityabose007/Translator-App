@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import VoiceTranslator from './VoiceTranslator';
-import TextToVoice from './TextToVoice';
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import VoiceTranslator from "./VoiceTranslator";
+import TextToVoice from "./TextToVoice";
 
 const Stack = createStackNavigator();
 
