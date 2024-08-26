@@ -49,8 +49,8 @@ export default function VoiceTranslator({ navigation }) {
           style={{ width: 150 }}
         >
           <Picker.Item label="English" value="English" />
-          <Picker.Item label="Spanish" value="Spanish" />
-          <Picker.Item label="German" value="German" />
+          <Picker.Item label="Bengali" value="Bengali" />
+          <Picker.Item label="Hindi" value="Hindi" />
         </Picker>
 
         {/* Middle Buttons */}
@@ -69,9 +69,9 @@ export default function VoiceTranslator({ navigation }) {
           onValueChange={(itemValue) => setSelectedLanguage2(itemValue)}
           style={{ width: 150 }}
         >
-          <Picker.Item label="French" value="French" />
-          <Picker.Item label="Italian" value="Italian" />
-          <Picker.Item label="Chinese" value="Chinese" />
+          <Picker.Item label="Bengali" value="Bengali" />
+          <Picker.Item label="Hindi" value="Hindi" />
+          <Picker.Item label="English" value="English" />
         </Picker>
       </View>
 
