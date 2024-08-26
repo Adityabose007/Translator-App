@@ -70,7 +70,7 @@ export default function VoiceTranslator({ navigation }) {
           style={{ width: 150 }}
         >
           <Picker.Item label="Bengali" value="bengali" />
-          <Picker.Item label="Hindi" value="hindi" />
+          <Picker.Item label="Hindi"   value="hindi" />
           <Picker.Item label="English" value="english" />
         </Picker>
       </View>

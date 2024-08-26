@@ -1,3 +1,5 @@
+//This file is for join voice-Text and Text-voice
+
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
