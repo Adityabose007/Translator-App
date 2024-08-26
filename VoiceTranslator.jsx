@@ -69,9 +69,9 @@ export default function VoiceTranslator({ navigation }) {
           onValueChange={(itemValue) => setSelectedLanguage2(itemValue)}
           style={{ width: 150 }}
         >
-          <Picker.Item label="Bengali" value="Bengali" />
-          <Picker.Item label="Hindi" value="Hindi" />
-          <Picker.Item label="English" value="English" />
+          <Picker.Item label="Bengali" value="bengali" />
+          <Picker.Item label="Hindi" value="hindi" />
+          <Picker.Item label="English" value="english" />
         </Picker>
       </View>
 
