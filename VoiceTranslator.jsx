@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, TextInput } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import { t } from 'react-native-tailwindcss';
-
+import React, { useState } from "react";
+import { View, Text, TouchableOpacity, TextInput } from "react-native";
+import { Picker } from "@react-native-picker/picker";
+import Icon from "react-native-vector-icons/FontAwesome";
+import { t } from "react-native-tailwindcss";
 
 export default function VoiceTranslator({ navigation }) {
-console.log('Navigation Prop:', navigation);  
+  console.log("Navigation Prop:", navigation);
   const [selectedLanguage1, setSelectedLanguage1] = useState("English");
   const [selectedLanguage2, setSelectedLanguage2] = useState("French");
   const [inputText, setInputText] = useState("I am listening...");
@@ -14,10 +13,14 @@ console.log('Navigation Prop:', navigation);
   return (
     <View style={[t.flex1, t.bgGray200, t.p4]}>
       {/* Header */}
-      <Text style={[t.text2xl, t.fontBold, t.mB4, t.mT8]}>Voice Translator</Text>
+      <Text style={[t.text2xl, t.fontBold, t.mB4, t.mT8]}>
+        Voice Translator
+      </Text>
 
       {/* TextInput 1 */}
-      <View style={[t.bgWhite, t.roundedLg, t.p4, t.border, t.borderBlue400, t.mB4]}>
+      <View
+        style={[t.bgWhite, t.roundedLg, t.p4, t.border, t.borderBlue400, t.mB4]}
+      >
         <Text style={[t.textGray600, t.mB2]}>{selectedLanguage1}</Text>
         <TextInput
           style={[t.textLg, t.textGray500]}
@@ -75,14 +78,10 @@ console.log('Navigation Prop:', navigation);
       {/* Navigation Button to TextToVoice */}
       <TouchableOpacity
         style={[t.bgBlue600, t.p4, t.roundedLg, t.mT8, t.itemsCenter]}
-        onPress={() => navigation.navigate('TextToVoice')}
+        onPress={() => navigation.navigate("TextToVoice")}
       >
         <Text style={[t.textWhite, t.textLg]}>Go to Text to Voice</Text>
       </TouchableOpacity>
-
     </View>
   );
 }
-
-
-
